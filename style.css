@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Amsterdam";
+  font-style: normal;
+  font-format: truetype;
+  font-weight: 400;
+  src: url("public/fonts/amsterdam.ttf") ;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: GeneralSans, sans-serif;
+}
+
+body {
+  color: #000000;
+  background-color: #f7f7f7;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.image-container {
+  position: relative; 
+  height: 260px;
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.text-overlay > h1 {
+  font-family: "Amsterdam";
+  font-size: 24px;
+}
+
+.text-overlay > span {
+  font-size: 16px;
+}
+
+.profile-info h1 {
+  margin: 0;
+}
+
+.social-media-icon {
+  width: 80px;
+  object-fit: cover;
+  padding-right: 10px;
+}
+
+.social-media-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media-card {
+  padding: 16px;
+}
+
+.social-media-card > a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+  width: 235px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 8px;
+  background-color: #FFFFFF;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  font-size: 14px;
+  height: 20px;
+}

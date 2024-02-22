@@ -61,7 +61,6 @@ main {
 
 .social-media-icon {
   width: 80px;
-  object-fit: cover;
   padding-right: 10px;
 }
 
@@ -71,7 +70,7 @@ main {
 }
 
 .social-media-card {
-  padding: 16px;
+  padding: 8px;
 }
 
 .social-media-card > a {
@@ -98,4 +97,32 @@ footer {
   padding: 20px;
   font-size: 14px;
   height: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .image-container {
+    height: 200px; /* Reduz a altura da imagem */
+  }
+
+  .image-container img {
+    width: auto; /* Define a largura da imagem como automática */
+    height: 150px; /* Reduz a altura da imagem principal */
+    object-fit: cover; /* Mantém a proporção e corta a imagem para preencher o contêiner */
+  }
+  
+  .text-overlay > h1 {
+    font-size: 20px; /* Reduz o tamanho do texto do título */
+  }
+  
+  .text-overlay > span {
+    font-size: 14px; /* Reduz o tamanho do texto da descrição */
+  }
+  
+  .social-media-icon {
+    width: 60px; /* Reduz o tamanho dos ícones de mídia social */
+  }
+  
+  .social-media-card > a {
+    width: 200px; /* Reduz a largura dos cartões de mídia social */
+  }
 }
